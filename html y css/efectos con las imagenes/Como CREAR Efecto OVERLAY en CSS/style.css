@@ -1,0 +1,33 @@
+.img{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.img:hover::before{
+    transform: translate(0);
+
+
+
+}
+
+.img::after{
+    counter-reset: "soy un overlay";
+    font-size: 2rem;
+    color: blanchedalmond;
+    background-color: aqua;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translate(100%);
+    transition: trnsform .3s;
+
+}
